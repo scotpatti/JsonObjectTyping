@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Message JSON Schema",
+
+  "type": "object",
+
+  "properties": {
+    "Type": {
+      "type": "string",
+      "default": "MSG",
+      "description": "Simple Message type"
+    },
+    "Sender": {
+      "type": "string",
+      "default": "",
+      "description": "Sender of the message"
+    },
+    "Message": {
+      "type": "string",
+      "default": "",
+      "description": "Message content"
+    }
+  }
+}

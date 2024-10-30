@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for my JSON file format",
+
+  "type": "object",
+
+  "properties": {
+    "Type": {
+      "type": "string",
+      "default": "MSG",
+      "description": "Simple Message type"
+    },
+    "Sender": {
+      "type": "string",
+      "default": "",
+      "description": "Sender of the message"
+    },
+    "Command": {
+      "type": "string",
+      "default": "",
+      "description": "Command without parameters"
+    },
+    "Parameters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Command parameters"
+    }
+  },
+  "required": [ "Type", "Sender", "Command", "Parameters" ],
+  "additionalItems": false
+}
