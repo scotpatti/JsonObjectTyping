@@ -1,11 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-using JsonObjectTyping;
+﻿using JsonObjectTyping;
 using Newtonsoft.Json;
 using JsonObjectTyping.JsonSchema;
 using Newtonsoft.Json.Schema;
 
+// Uncomment one of the following lines only!
 string sampleMessage = File.ReadAllText("JsonSchema/MessageSample.json");
 //string sampleMessage = File.ReadAllText("JsonSchema/CommandSample.json");
+
 JSchema MessageSchema = JSchema.Parse(File.ReadAllText("JsonSchema/Message.json"));
 JSchema CommandSchema = JSchema.Parse(File.ReadAllText("JsonSchema/Command.json"));
 
